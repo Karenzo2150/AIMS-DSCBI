@@ -1,0 +1,39 @@
+# ---- Core numerics / utils
+numpy==2.2.6
+pandas==2.3.2
+scikit-learn==1.7.1
+tqdm==4.67.1
+requests==2.32.5
+
+# ---- Hugging Face stack (tokenization, models)
+transformers==4.55.4
+tokenizers==0.21.4
+huggingface-hub==0.34.4
+safetensors==0.6.2
+sentence-transformers==3.2.1    # for sentence embeddings
+
+# ---- OpenAI client + token counting (optional but useful)
+openai==1.101.0
+tiktoken==0.11.0
+
+# ---- LangChain (RAG building blocks)
+langchain==0.3.27
+langchain-core==0.3.74
+langchain-community==0.3.27
+langchain-openai==0.3.31
+langchain-text-splitters==0.3.9
+
+# ---- Vector DBs (pick at least one)
+faiss-cpu==1.8.0.post5          # local, fast, great for demos
+chromadb==0.5.17                # simple, file-backed vector store for workshops
+# qdrant-client==1.12.0         # OPTIONAL: add if you’ll demo Qdrant
+# weaviate-client==4.9.2        # OPTIONAL: add if you’ll demo Weaviate
+
+# ---- PDF & document loading for RAG
+pypdf==6.0.0                    # lightweight PDF text extraction
+pymupdf==1.24.10                # stronger PDF parsing when pypdf struggles
+pdfminer.six==20231228          # OPTIONAL: alternative PDF text extractor
+beautifulsoup4==4.13.4          # OPTIONAL: for HTML pages to text
+
+# ---- Notebook runtime (keep it light)
+ipykernel==6.30.1
